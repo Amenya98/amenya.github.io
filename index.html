@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amenya</title>
+	<link  href="style.css" rel="stylesheet" >
+</head>
+<body>
+	
+<div class="background">
+
+	<div class="nav">
+		<a class="a active" href="#">HOME</a>
+		<a class="b" href="#">ABOUT</a>
+		<a class="c" href="#">GALLERY</a>
+		<a class="d" href="#">CONTACT ME</a>
+		
+	</div>
+ 
+ <div class="content">
+ 	<div class="home">
+ 	<h1><b>Zaccheaus Amenya</b></h1>
+ 	<h3>A Software Developer </h3>
+ 	</div>
+ </div>
+
+ 
+
+ <div class="about"> 
+ 	<p><b>Hello Friends,</b> <br>
+ 	Welcome to my site( Personal Portfolio).<br>
+ 	In this site you will get to know more abut me. <br>
+ 	I am Zaccheaus Amenya, Currently a third year year student at Masinde Muliro University of Science and Technolody.
+ 	I am taking a Bachelors of Science in Information Technology.<br>
+ 	I am a Software developer, specializing on android development, using Java as my programming Language.</p>
+	 <p>We can’t run the modern world without software. National infrastructures and utilities are controlled by computer-based systems and most electrical products include a
+	computer and controlling software. Industrial manufacturing and distribution is completely computerized, as is the financial system. Entertainment, including the
+	music industry, computer games, and film and television, is software intensive.<br>
+	Therefore, software engineering is essential for the functioning of national and inter-national societies.</p>
+ </div>
+
+ <div class="gallery">
+
+ 	<div class="image">
+ 		<img src="Images/a1.jpg">
+ 	</div>
+ 	
+ 	<div class="image">
+ 		<img src="Images/a2.jpg">
+ 	</div>
+ 	
+ 	<div class="image">
+ 		<img src="Images/a4.jpg">
+ 	</div>
+ 	
+ 	<div class="image">
+ 		<img src="Images/a5.jpg">
+ 	</div>
+ 	
+ 	<div class="image">
+ 		<img src="Images/a6.jpg">
+ 	</div>
+ 	
+ 	<div class="image">
+ 		<img src="Images/a7.jpg">
+ 	</div>
+ 	
+ 	<div class="image">
+ 		<img src="Images/a8.jpg">
+ 	</div>
+ 	
+ 	<div class="image">
+ 		<img src="Images/a9.jpg">
+ 	</div>
+ 	
+ 	<div class="image">
+ 		<img src="Images/a10.jpg">
+ 	</div>
+ 	
+ 	<div class="image">
+ 		<img src="Images/a11.jpg">
+ 	</div>
+ 	
+ 	<div class="image">
+ 		<img src="Images/a12.jpg">
+ 	</div>
+
+ 	<div class="image">
+ 		<img src="Images/a13.jpg">
+ 	</div>
+ 	</div>
+
+ 	<div class=" contact">
+
+ 		<div class="contactform">
+ 			<form action="index.html"  method="post">
+ 				<input type="text" name="" class="inputtext" value="First Name">
+ 				<input type="text" name="" class="inputtext" value="Last Name">
+ 				<input type="text" name="" class="inputtext" value="Your Email">
+ 				<textarea cols="4" rows="6"class="inputmessage">Your Message...!!</textarea>
+ 				<input type="button" name="" class="submitbutton" value="Submit">
+ 			</form>
+ 		
+ 		</div>
+ 		
+ 	</div>
+ 	 
+</div>
+
+<script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a').click(function(){
+			//alart("I am click");
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+
+		var $a = $('.a'),
+		$b = $('.b'),
+		$c = $('.c'),
+		$d = $('.d'),
+		$home = $('.home'),
+		$about = $('.about');
+		$gallery = $('.gallery'),
+		$contact = $('.contact'),
+
+		$a.click(function(){
+			$home.fadeIn();
+			$about.fadeOut();
+			$gallery.fadeOut();
+			$contact.fadeOut();
+		});
+		$b.click(function(){
+			$about.fadeIn();
+			$home.fadeOut(); 
+			$gallery.fadeOut();
+			$contact.fadeOut();
+		});
+		$c.click(function(){
+			$gallery.fadeIn();
+			$home.fadeOut();
+			$about.fadeOut(); 
+			$contact.fadeOut();
+		});
+		$d.click(function(){
+			$contact.fadeIn();
+			$home.fadeOut();
+			$about.fadeOut(); 
+			$gallery.fadeOut(); 
+		});
+	});
+</script>
+</body>
+</html> 
